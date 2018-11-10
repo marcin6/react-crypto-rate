@@ -7,7 +7,9 @@ export default class CryptoList extends Component {
     }
 
     render() {
+        // String.from(tu dać unicode)
         let data = this.props.data;
+        
         return (
             // nie istniejący kontener, któremy możemy przypisać klasę i odwołać się do niego ale on nie wyświetli się na stronie
             <React.Fragment>
