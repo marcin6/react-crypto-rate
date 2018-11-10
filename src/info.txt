@@ -1,0 +1,13 @@
+1. stworzyć i odpalić aplikację
+2. pozbyć się niepotrzebnych domyślnie zainstalowanych plików
+3. stworzyć i podpiąć komponent bazowy
+4. zainstalować i zaimportować axios
+5. przygotować i strzelić request
+6 wyświetlić dane w konsoli
+............................
+7. stworzyć komponent potomny (jego zadanie jest wyświetlanie pobranej od rodzica listy)
+ . zaimportować go do rodzica i sprawdzić czy wyświetla cokolwiek
+8. przygotowanie listy obiektów do przekazania dla dziecka: cel--> last rate: {obiekt.currency} i td.
+9. wyświetlić przekazaną dla dziecka listę w konsoli - sprawdzić propsy dziecka
+10. zrobić mapowanie w render() dziecka i wyświetlić listę czymkolwiek - np. obiekt.currency
+11. wyświetlić wszystkie informacje w liście - przygotować poprawny template
