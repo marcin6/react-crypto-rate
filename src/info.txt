@@ -11,3 +11,24 @@
 9. wyświetlić przekazaną dla dziecka listę w konsoli - sprawdzić propsy dziecka
 10. zrobić mapowanie w render() dziecka i wyświetlić listę czymkolwiek - np. obiekt.currency
 11. wyświetlić wszystkie informacje w liście - przygotować poprawny template
+
+
+app
+
+import React, { Component } from 'react';
+import Crypto from './Crypto';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+    <Crypto />
+      </div>
+      </div>
+    );
+  }
+}
+
+export default App;
