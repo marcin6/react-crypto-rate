@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Crypto from './Crypto';
 import './App.css';
-import  logo from'./logo.png';
+import logo from './logo.png';
 
 class App extends Component {
   render() {
@@ -9,8 +9,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Crypto />
+          <h1>Crypto Rate</h1>
         </header>
+        <Crypto />
       </div>
     );
   }
