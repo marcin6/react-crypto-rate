@@ -9,7 +9,8 @@ export default class Crypto extends Component {
         this.state = {
             data: [],
             waluty: [],
-            oldData: []
+            oldData: [],
+            filterValue: ''
         }
     }
 
@@ -65,13 +66,32 @@ export default class Crypto extends Component {
     componentDidMount() {
         this.getData();
 
-        setInterval(() => { this.getData() }, 5000);
+        setInterval(() => {
+                if (this.state.filterValue.trim === '') {
+                    this.getData();
+                }
+            }, 5000)
+
+    }
+
+    onFilter = (event) => {
+        let value = event.target.value;
+        let waluty = this.state.waluty;
+
+        waluty = waluty.filter(waluta => {
+            return waluta.toUpperCase().search(value.toUpperCase()) !== -1;
+        });
+
+        this.setState({ waluty });
     }
 
     render() {
         console.log(this.state.data)
         return (
-            <CryptoList waluty={this.state.waluty} data={this.state.data} />
+            <React.Fragment>
+                <input type="text" value={this.state.value} onChange={this.onFilter} />
+                <CryptoList waluty={this.state.waluty} data={this.state.data} />
+            </React.Fragment>
         )
     }
 }
