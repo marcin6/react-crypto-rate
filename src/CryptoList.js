@@ -14,9 +14,9 @@ export default class CryptoList extends Component {
                 <ul className="list-wrapper">
                     {this.props.waluty.map(waluta =>
                         <li className="waluta-content" key={waluta}>
-                            <span className="waluta-content">Last rate: {data[waluta].last}</span>
-                            <span className="waluta-content">{waluta}</span>
-                            <span className="waluta-content">{`[ ${data[waluta].symbol}]`}</span>
+                            Last rate:<span className={`${data[waluta].class}`}> {data[waluta].last.toFixed(2)}</span>
+                            <span >{waluta}</span>
+                            <span >{`[ ${data[waluta].symbol}]`}</span>
                         </li>
                     )}
                 </ul>

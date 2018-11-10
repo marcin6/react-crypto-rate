@@ -9,7 +9,6 @@ export default class Crypto extends Component {
         this.state = {
             data: [],
             waluty: [],
-            filterValue: "",
             oldData: []
         }
     }
@@ -32,7 +31,7 @@ export default class Crypto extends Component {
                     let oldDataObject = {};
 
                     oldDataObject.last = newDataObject.last;
-                    oldDataObject.currency = newDataObject.symbol;
+                    oldDataObject.symbol = newDataObject.symbol;
 
                     oldData.push(oldDataObject);
 
@@ -70,6 +69,7 @@ export default class Crypto extends Component {
     }
 
     render() {
+        console.log(this.state.data)
         return (
             <CryptoList waluty={this.state.waluty} data={this.state.data} />
         )
