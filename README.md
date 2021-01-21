@@ -6,6 +6,6 @@ The API from [https://api.coingecko.com/](https://api.coingecko.com/) was used f
 
 ## Demo
 
-The app is deployment on Heroku: []().
+The app is deployment on Heroku: [https://react-crypto-rate.herokuapp.com/](https://react-crypto-rate.herokuapp.com/).
 
 
