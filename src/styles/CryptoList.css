@@ -23,7 +23,7 @@
 
 .cryptolist-data {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -31,6 +31,8 @@
 .cryptolist-element {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
+  font-size: 12px;
 }
 
 .cryptolist-element span:first-child {
@@ -53,5 +55,6 @@
 
   .cryptolist-data {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
