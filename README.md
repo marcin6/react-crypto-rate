@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Crypto Rate
+
 ## API
 
 The API from [https://api.coingecko.com/](https://api.coingecko.com/) was used for the current course.
